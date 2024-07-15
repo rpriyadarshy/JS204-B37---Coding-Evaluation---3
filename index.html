@@ -18,6 +18,9 @@
           </ul>
         </nav>
         <div id="user-auth">
+          <button>
+            <input type="text" id="search-input" placeholder="search-for-blogs">search-for-blogs
+          </button>
           <button id="login-button">Login</button>
           <button id="signup-button">Sign Up</button>
           <button id="logout-button" style="display: none">Logout</button>
@@ -61,6 +64,14 @@
               latest posts.
             </p>
           </div>
+          <div id="posts-container"></div>
+          <button id="toggle-button">
+            Toggle Pagination/Infinite Scrolling
+          </button>
+          <div id="pagination-controls">
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
+          </div>
 
           <div class="widget">
             <h3>Categories</h3>
@@ -86,7 +97,7 @@
       </div>
     </footer>
 
-    <!-- Login Modal -->
+    
     <div id="login-modal" class="modal">
       <div class="modal-content">
         <span class="close-button">&times;</span>
